@@ -1,0 +1,14 @@
+DSCI100 Individual Planning project
+Author: William Tang
+
+Main Objective: Investigate if skill and gender correlate with time spent on the game/data collected.
+
+Project Description:
+We would like to know which "kinds" of players are most likely to contribute a large amount of data so that we can target those players in our recruiting efforts. We will determine whether or not there is a correlation between the player's reported skill level and gender, and the amount of time they spend playing the game. We can assume that the data we collect from their gameplay increases with the amount of time played; therefore, we will be looking at the players with the most hours.
+
+Project Plan:
+1. Load in tidyverse
+2. load in both sessions.csv and players.csv
+3. Arrange players.csv into descending order and filter out all results under 0.166667 hours or 10 minutes of gameplay. We do this because we are searching for the players who contribute the most data. Much of the lowest results show up as 0 hours played and don't give us any data.
+4. Visualize the data
+5. Group by skill level and find the average time played by each skill level. By doing this, we could find out if a certain skill level contributes more than the others.
