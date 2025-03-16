@@ -1,14 +1,9 @@
 DSCI100 Individual Planning project
 Author: William Tang
 
-Main Objective: Investigate if skill and gender correlate with time spent on the game/data collected.
+Data Description:
+The datasets that we have been given are the sessions and players files, which are data collected from the Minecraft study. There were 196 observations in the players.csv file, with each observation being information on a participant. They recorded 7 variables: their experience, subscription, email, name, gender, age, and time played. One problem I can see in the data is that there are many accounts that have 0 hours played and will not help me with my calculations. The other dataset is sessions.csv and has 1535 observations, meaning that people opened the game 1535 times. There are 5 variables: the player's email, start time, end time, original start time, and end time.
 
-Project Description:
-We would like to know which "kinds" of players are most likely to contribute a large amount of data so that we can target those players in our recruiting efforts. We will determine whether or not there is a correlation between the player's reported skill level and gender, and the amount of time they spend playing the game. We can assume that the data we collect from their gameplay increases with the amount of time played; therefore, we will be looking at the players with the most hours.
+Questions:
 
-Project Plan:
-1. Load in tidyverse
-2. load in both sessions.csv and players.csv
-3. Arrange players.csv into descending order and filter out all results under 0.166667 hours or 10 minutes of gameplay. We do this because we are searching for the players who contribute the most data. Much of the lowest results show up as 0 hours played and don't give us any data.
-4. Visualize the data
-5. Group by skill level and find the average time played by each skill level. By doing this, we could find out if a certain skill level contributes more than the others.
+The question that I will address is whether age and skill level have any correlation with the amount of time spent on the game and if the age and skill level could help predict the amount of time they might spend on the game. I could first filter out all of the accounts that don't have any time spent on the game, as we are dealing with people who actually played the game. I could separate all the data in players.csv into 2 new datasets containing skill level and time played as well as the age and time played. I could use summary statistics to calculate the average time spent on the game by each skill level as well as age.
